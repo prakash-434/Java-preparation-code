@@ -2,6 +2,8 @@ Java Collections Framework - Complete Guide
 What are Collections?
 Collections are container objects that store groups of objects.
 The Java Collections Framework provides a unified architecture for storing and manipulating groups of objects.
+Added in Java version 1.2
+Present in java.util package
 
 Purpose of Collections
 
