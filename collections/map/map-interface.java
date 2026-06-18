@@ -7,6 +7,12 @@ Unordered
 One null key, multiple null values
 Best for fast lookups
 
+Array of buckets (default 16), uses hashCode() + equals()
+Load factor 0.75 → resizes at 12 entries (16 × 0.75)
+Java 8+: bucket converts from linked list to Red-Black Tree when bucket size > 8 (treeification threshold)
+put/get is O(1) avg, O(n) worst (all keys same hash), O(log n) with treeification
+
+
 javaimport java.util.HashMap;
 import java.util.Map;
 

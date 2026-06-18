@@ -5,6 +5,11 @@ Elements ordered by priority (natural order or comparator)
 Min-heap by default
 Use for task scheduling, Dijkstra's algorithm
 
+Min-heap by default (smallest element at head)
+For max-heap: new PriorityQueue<>(Collections.reverseOrder())
+peek() O(1), poll() O(log n), add() O(log n)
+
+
 javaimport java.util.PriorityQueue;
 import java.util.Comparator;
 

@@ -6,6 +6,11 @@ Backed by Red-Black tree
 No null keys (but null values allowed)
 Use when you need sorted key-value pairs
 
+Red-Black Tree internally → always sorted
+All operations O(log n)
+Requires keys to be Comparable or you provide a Comparator
+
+
 javaimport java.util.TreeMap;
 import java.util.Comparator;
 import java.util.Map;

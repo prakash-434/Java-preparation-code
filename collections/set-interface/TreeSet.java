@@ -6,6 +6,11 @@ Backed by TreeMap (Red-Black tree)
 No null elements allowed
 Use when you need sorted unique elements
 
+Red-Black Tree internally → always sorted
+All operations O(log n)
+Requires keys to be Comparable or you provide a Comparator
+
+
 javaimport java.util.TreeSet;
 import java.util.Comparator;
 
