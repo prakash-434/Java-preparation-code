@@ -6,6 +6,18 @@ Implements both List and Deque interfaces
 Best for frequent insertions/deletions at beginning or middle
 Use when you need queue/deque operations
 
+Doubly linked list — implements both List AND Deque
+No random access (O(n) for get(i)), but O(1) add/remove at head/tail
+Higher memory overhead (each node holds prev + next pointers)
+Time Complexity:
+
+get(index): O(n)
+add(element): O(1)
+add(index, element): O(n)
+addFirst()/addLast(): O(1)
+removeFirst()/removeLast(): O(1)
+
+    
 javaimport java.util.LinkedList;
 
 public class LinkedListDemo {
@@ -57,10 +69,3 @@ public class LinkedListDemo {
         list.pollLast();
     }
 }
-Time Complexity:
-
-get(index): O(n)
-add(element): O(1)
-add(index, element): O(n)
-addFirst()/addLast(): O(1)
-removeFirst()/removeLast(): O(1)
