@@ -6,6 +6,20 @@ Best for random access and iteration
 Use when you need fast random access by index
 Not synchronized (not thread-safe)
 
+Backed by Object[], default capacity 10
+Growth: newCapacity = oldCapacity * 1.5 (roughly)
+add() is O(1) amortized, O(n) on resize
+get(i) is O(1), remove(i) is O(n) — shifts elements
+
+Time Complexity:
+
+get(index): O(1)
+add(element): O(1) amortized
+add(index, element): O(n)
+remove(index): O(n)
+contains(element): O(n)
+
+
 javaimport java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -127,10 +141,3 @@ public class ArrayListDemo {
         String min = Collections.min(list);
     }
 }
-Time Complexity:
-
-get(index): O(1)
-add(element): O(1) amortized
-add(index, element): O(n)
-remove(index): O(n)
-contains(element): O(n)
